@@ -45,11 +45,11 @@ const PokeInfo = () => {
         <p className='name-info'>{pokemonInfo?.name}</p>
         <div className='secundary-container-info'>
           <div className='date-container-info'>
-            <p className='subtitle-date-info'>Peso</p>
+            <p className='subtitle-date-info'>Weight</p>
             <p className='date-info'>{pokemonInfo?.weight}</p>
           </div>
           <div className='date-container-info'>
-            <p className='subtitle-date-info'>Altura</p>
+            <p className='subtitle-date-info'>Height</p>
             <p className='date-info'>{pokemonInfo?.height}</p>
           </div>
         </div>
@@ -66,7 +66,7 @@ const PokeInfo = () => {
             
           </div>
           <div className='container-info-secundary'>
-            <p className='subtitle-info-secundary'>Habilidades</p>
+            <p className='subtitle-info-secundary'>Abilities</p>
             <div className='container-infomation-secundary'>
               {
                 pokemonInfo?.abilities.map(ability => (
@@ -100,7 +100,7 @@ const PokeInfo = () => {
 
       </article>
       <article className='movements-containers'>
-        <h3 className='subtitle-stat'>movimientos</h3>
+        <h3 className='subtitle-stat'>Movements</h3>
         <div className='movement-info-container'>
         {
           pokemonInfo?.moves.map(move => (

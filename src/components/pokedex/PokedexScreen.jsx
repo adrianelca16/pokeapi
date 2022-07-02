@@ -64,8 +64,8 @@ const PokedexScreen = () => {
     <div className="pokedex-container">
       <div>
         <section className="subtitle-container">
-          <p className="subtitle">Hola {userName},</p>
-          <p className="subtitle-info">aqui podras encontrar tu pokemon favorito</p>
+          <p className="subtitle">Hello {userName},</p>
+          <p className="subtitle-info">here you can find your favorite pokemon</p>
         </section>
         <section className="search-container">
           <PokeName />

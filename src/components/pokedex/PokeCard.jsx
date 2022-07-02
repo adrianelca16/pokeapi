@@ -50,7 +50,7 @@ const PokeCard = ({ url }) => {
             </p>
           ))}
         </div>
-        <p className="type-p">tipo</p>
+        <p className="type-p">type</p>
       </div>
       <div className="stats-container">
         {pokemon?.stats.map((stat) => (

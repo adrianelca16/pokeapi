@@ -44,8 +44,8 @@ const PokemonName = () => {
     <div className="pokedex-container">
       <div>
         <section className="subtitle-container">
-          <p className="subtitle">Hola {userName},</p>
-          <p>aqui podras encontrar tu pokemon favorito</p>
+          <p className="subtitle">Hello {userName},</p>
+          <p>here you can find your favorite pokemon</p>
         </section>
         <section className="search-container">
           <PokeName />
@@ -69,7 +69,7 @@ const PokemonName = () => {
                 </p>
               ))}
             </div>
-            <p className="type-p">tipo</p>
+            <p className="type-p">type</p>
           </div>
           <div className="stats-container">
             {namePokemon?.stats.map((stat) => (

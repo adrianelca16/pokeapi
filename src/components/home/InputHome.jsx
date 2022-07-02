@@ -24,7 +24,7 @@ const InputHome = () => {
   return (
     <form onSubmit={handleSubmit(submit)} className='form-welcome'>
         <input type="text" placeholder='Ingresa tu nombre de entrenador' {...register('nameUser')} className='input'/>
-        <button className='btn'>Comenzar</button>
+        <button className='btn'>Begin</button>
     </form>
   )
 }

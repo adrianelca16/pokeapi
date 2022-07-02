@@ -5,8 +5,8 @@ const HomeScreen = () => {
   return (
     <div className='welcome-container'>
        <div className='title-container'>
-          <h2 className='title-welcome'>¡Hola Entrenador! </h2>
-          <p>Para pode comenzar, dame tu nombre</p>
+          <h2 className='title-welcome'>Hi Coach!</h2>
+          <p>In order to start, give me your name</p>
        </div>
         <InputHome/>
     </div>

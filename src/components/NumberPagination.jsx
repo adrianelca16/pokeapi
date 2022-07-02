@@ -10,7 +10,7 @@ const NumberPagination = () => {
 
   return (
     <form className='pagination-container'>
-      <label htmlFor="pagination" className='label-pagination'>Numero de pokemones por pagina</label>
+      <label htmlFor="pagination" className='label-pagination'>Number of pokemon per page</label>
         <input id='pagination' className='select-pagination' type="text" value={pokemonPerPage} onChange={e => dispatch(setPokemonPerPage(e.target.value))}/>
     </form>
   )
