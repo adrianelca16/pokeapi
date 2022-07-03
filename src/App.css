@@ -1,37 +1,42 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.App{
+
+.App {
     width: 100vw;
     min-height: 100vh;
     background-color: #f0f0f0;
     box-sizing: border-box;
 
 }
-.header{
-    margin-top: 0;background: linear-gradient(#df1a1a 30%, rgb(34, 33, 33) 100%);
+
+.header {
+    margin-top: 0;
+    background: linear-gradient(#df1a1a 65%, rgb(34, 33, 33) 30%);
     width: 100vw;
-    height: 150px;
+    height: 172px;
     display: flex;
     flex-direction: column;
-    justify-content:end;
 }
-.title{
-    background: linear-gradient(#ffffff 50%,#000000fa 80%);
+
+.title {
+    background: linear-gradient(#ffffff 50%, #000000fa 80%);
     background-clip: text;
-    color: transparent; 
+    color: transparent;
     font-size: 50px;
     padding: 20px;
     position: absolute;
     left: 80px;
 }
-.black-header{
+
+.black-header {
     width: 100vw;
     height: 70px;
     background-color: #131212;
 }
-.welcome-container{
+
+.welcome-container {
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -41,58 +46,69 @@ body{
     flex-direction: column;
     gap: 30px;
 }
-.title-container{
+
+.title-container {
     display: flex;
     flex-direction: column;
 }
+
 .title-container p {
     font-size: 20px;
     font-weight: 700;
 }
-.title-welcome{
+
+.title-welcome {
     font-size: 35px;
     margin: 0;
     color: #ce2a2a;
 }
-.form-welcome{
+
+.form-welcome {
     display: flex;
     box-shadow: 5px 5px 5px #b8b6b6;
     width: max-content;
 }
+
 .input {
     padding: 20px;
     font-size: 20px;
     border: none;
 }
-.btn{
+
+.btn {
     padding: 20px;
     font-size: 20px;
     background-color: #ce2a2a;
     color: #fff;
     border: none;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #e92a2a;
     cursor: pointer;
     transition: 0.7s;
 }
-.subtitle-container{
+
+.subtitle-container {
     display: flex;
     gap: 5px;
     font-size: 20px;
     font-weight: 600;
     justify-content: center;
 }
-.subtitle{
+
+.subtitle {
     color: #ce2a2a;
 }
-.pokedex-container{
+
+.pokedex-container {
     padding: 20px 80px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-.search-container{
+
+.search-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,14 +116,17 @@ body{
     flex-wrap: wrap;
     width: 100%;
 }
-.select-type{
+
+.select-type {
     font-size: 20px;
     padding: 20px 30px;
     border: none;
     background-color: #fff;
-    box-shadow: 5px 5px 5px #b8b6b6;text-align: center;
+    box-shadow: 5px 5px 5px #b8b6b6;
+    text-align: center;
 }
-.pagination-container{
+
+.pagination-container {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -117,19 +136,23 @@ body{
     text-align: center;
     gap: 5px;
 }
-.select-pagination{
+
+.select-pagination {
     font-size: 20px;
     width: 100px;
     padding: 20px 30px;
     border: none;
     background-color: #ce2a2a;
     color: #fff;
-    box-shadow: 5px 5px 5px #b8b6b6;text-align: center;
+    box-shadow: 5px 5px 5px #b8b6b6;
+    text-align: center;
 }
-.label-pagination{
+
+.label-pagination {
     padding: 0 20px;
 }
-.card-container{
+
+.card-container {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -140,96 +163,115 @@ body{
     justify-content: center;
     align-items: center;
 }
-.grass{
-    border-color:  #14cf81;
+
+.grass {
+    border-color: #14cf81;
     color: #14cf81;
     background: linear-gradient(#14cf81 0%, #e3e63f 30%, #ffffff 30%, #ffffff 100%);
 }
-.normal{
+
+.normal {
     border-color: #7c654f;
     color: #7c654f;
     background: linear-gradient(#7c654f 0%, #e3e63f 30%, #ffffff 30%, #ffffff 100%);
 }
-.fighting{
+
+.fighting {
     border-color: #615d5a;
     color: #615d5A;
     background: linear-gradient(#615d5a 0%, #8f914b 30%, #ffffff 30%, #ffffff 100%);
 }
-.poison{
+
+.poison {
     border-color: #943fe4;
     color: #943fe4;
     background: linear-gradient(#943fe4 0%, #e63fd8 30%, #ffffff 30%, #ffffff 100%);
 }
-.ground{
+
+.ground {
     border-color: #9ea753;
     color: #9ea753;
     background: linear-gradient(#9ea753 0%, #c4c726 30%, #ffffff 30%, #ffffff 100%);
 }
-.rock{
+
+.rock {
     border-color: #444343;
     color: #444343;
     background: linear-gradient(#444343 0%, #cecec8 30%, #ffffff 30%, #ffffff 100%);
 }
-.bug{
+
+.bug {
     border-color: #069106;
     color: #069106;
     background: linear-gradient(#069106 0%, #66e63f 30%, #ffffff 30%, #ffffff 100%);
 }
-.ghost{
+
+.ghost {
     border-color: #6e0ea7;
     color: #6e0ea7;
     background: linear-gradient(#6e0ea7 0%, #6c4b8a 30%, #ffffff 30%, #ffffff 100%);
 }
-.steel{
+
+.steel {
     border-color: #e26a0e;
     color: #e26a0e;
     background: linear-gradient(#e26a0e 0%, #dac50c 30%, #ffffff 30%, #ffffff 100%);
 }
-.fire{
+
+.fire {
     border-color: #df4111;
     color: #df4111;
     background: linear-gradient(#df4111 0%, #e2b63b 30%, #ffffff 30%, #ffffff 100%);
 }
-.water{
+
+.water {
     border-color: #3fb5e4;
     color: #3fb5e4;
     background: linear-gradient(#3fb5e4 0%, #6e8fad 30%, #ffffff 30%, #ffffff 100%);
 }
-.electric{
+
+.electric {
     border-color: #2110b3;
     color: #2110b3;
     background: linear-gradient(#2110b3 0%, #3fbfe6 30%, #ffffff 30%, #ffffff 100%);
 }
-.psychic{
+
+.psychic {
     border-color: #cf14a7;
     color: #cf14a7;
     background: linear-gradient(#cf14a7 0%, #a15e9c 30%, #ffffff 30%, #ffffff 100%);
 }
-.ice{
+
+.ice {
     border-color: #3fe4e4;
     color: #3fe4e4;
     background: linear-gradient(#3fe4e4 0%, #5ea192 30%, #ffffff 30%, #ffffff 100%);
 }
-.dragon{
+
+.dragon {
     border-color: #cf1111;
     color: #cf1111;
     background: linear-gradient(#cf1111 0%, #d17a09 30%, #ffffff 30%, #ffffff 100%);
 }
-.dark{
+
+.dark {
     border-color: #292929;
     color: #292929;
     background: linear-gradient(#292929 0%, #a09fa0 30%, #ffffff 30%, #ffffff 100%);
 }
-.fairy{
+
+.fairy {
     border-color: #da89dd;
     color: #da89dd;
     background: linear-gradient(#da89dd 0%, #a15e9c 30%, #ffffff 30%, #ffffff 100%);
 }
-.img-card{
+
+.img-card {
     width: 150px;
     margin: 0;
 }
-.type-container{
+
+.type-container {
     display: flex;
     margin: 0;
     gap: 5px;
@@ -238,7 +280,8 @@ body{
     align-items: center;
     color: #272626;
 }
-.stats-container{
+
+.stats-container {
     display: grid;
     width: 100%;
     height: 45%;
@@ -250,44 +293,52 @@ body{
     gap: 10px;
     border-top: 2px solid #a09d9d9a;
 }
-.name-pokemon{
+
+.name-pokemon {
     font-size: 25px;
     margin: 0;
 }
-.info-principal-pokemon{
+
+.info-principal-pokemon {
     display: flex;
     flex-direction: column;
     margin: 0;
     gap: 0;
     text-align: center;
 }
-.type-p{
+
+.type-p {
     font-size: 13px;
     margin: 0;
     color: #302f2f98;
     position: relative;
     top: -13px;
 }
-.stat-name{
+
+.stat-name {
     font-size: 13px;
     color: #272626;
 }
-.stat-number{
+
+.stat-number {
     font-size: 15px;
     position: relative;
     top: -10px;
 }
-.type-description{
+
+.type-description {
     font-size: 15px;
     margin-top: 0;
 }
-.pokemon-card-container{
+
+.pokemon-card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-.poke-info-container{
+
+.poke-info-container {
     box-sizing: border-box;
     padding: 10px;
     width: 100vw;
@@ -298,7 +349,8 @@ body{
     align-items: center;
     margin-top: 100px;
 }
-.poke-info-principal{
+
+.poke-info-principal {
     width: 80%;
     background: #fff;
     padding: 10px;
@@ -310,54 +362,64 @@ body{
     justify-content: center;
     border-radius: 10px;
 }
-.img-container{
+
+.img-container {
     width: 100%;
     height: 200px;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.img-info{
+
+.img-info {
     width: 350px;
     position: relative;
     top: -70%;
 }
-.id-info{
+
+.id-info {
     font-size: 35px;
     font-weight: 600;
     border: 1px solid #2727279d;
     padding: 10px;
     border-radius: 5px;
 }
-.name-info{
+
+.name-info {
     font-size: 45px;
     font-weight: 600;
     margin: 0;
 }
-.secundary-container-info{
+
+.secundary-container-info {
     display: flex;
     gap: 20px;
     color: #272626;
 }
-.date-info{
+
+.date-info {
     margin: 0;
     font-size: 20px;
     font-weight: 600;
 }
-.date-container-info{
+
+.date-container-info {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.subtitle-date-info{
+
+.subtitle-date-info {
     font-weight: 300;
 }
-.container-info-secundary{
+
+.container-info-secundary {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
-.container-info-secundary-principal{
+
+.container-info-secundary-principal {
     display: flex;
     gap: 10%;
     width: 100%;
@@ -367,13 +429,15 @@ body{
     box-sizing: border-box;
     text-align: center;
 }
-.container-infomation-secundary{
+
+.container-infomation-secundary {
     display: flex;
     gap: 20px;
     box-sizing: border-box;
     margin-top: 0;
 }
-.type-info{
+
+.type-info {
     box-sizing: border-box;
     width: max-content;
     background-color: #d8d2d2;
@@ -382,126 +446,154 @@ body{
     color: #272626;
     box-shadow: 3px 3px 10px 3px #949191;
 }
-.grass-id{
+
+.grass-id {
     background: linear-gradient(#14cf81, #c7e63f);
     color: #fff;
 }
-.normal-id{
+
+.normal-id {
     color: #fff;
     background: linear-gradient(#7c654f 0%, #e3e63f 30%);
 }
-.fighting-id{
+
+.fighting-id {
     color: #fff;
     background: linear-gradient(#615d5a 0%, #8f914b 30%);
 }
-.poison-id{
+
+.poison-id {
     color: #fff;
     background: linear-gradient(#943fe4 0%, #e63fd8 30%);
 }
-.ground-id{
+
+.ground-id {
     color: #fff;
     background: linear-gradient(#9ea753 0%, #c4c726 30%);
 }
-.rock-id{
+
+.rock-id {
     color: #fff;
     background: linear-gradient(#444343 0%, #cecec8 30%);
 }
-.bug-id{
+
+.bug-id {
     color: #fff;
     background: linear-gradient(#069106 0%, #66e63f 30%);
 }
-.ghost-id{
+
+.ghost-id {
     color: #fff;
     background: linear-gradient(#6e0ea7 0%, #6c4b8a 30%);
 }
-.steel-id{
+
+.steel-id {
     color: #fff;
     background: linear-gradient(#e26a0e 0%, #dac50c 30%);
 }
-.fire-id{
+
+.fire-id {
     color: #fff;
     background: linear-gradient(#df4111 0%, #e2b63b 30%);
 }
-.water-id{
+
+.water-id {
     color: #fff;
     background: linear-gradient(#3fb5e4 0%, #6e8fad 30%);
 }
-.electric-id{
+
+.electric-id {
     color: #fff;
     background: linear-gradient(#2110b3 0%, #3fbfe6 30%);
 }
-.psychic-id{
+
+.psychic-id {
     color: #fff;
     background: linear-gradient(#cf14a7 0%, #a15e9c 30%);
 }
-.ice-id{
+
+.ice-id {
     color: #fff;
     background: linear-gradient(#3fe4e4 0%, #5ea192 30%);
 }
-.dragon-id{
+
+.dragon-id {
     color: #fff;
     background: linear-gradient(#cf1111 0%, #d17a09 30%);
 }
-.dark-id{
+
+.dark-id {
     color: #fff;
     background: linear-gradient(#292929 0%, #a09fa0 30%);
 }
-.fairy-id{
+
+.fairy-id {
     color: #fff;
     background: linear-gradient(#da89dd 0%, #a15e9c 30%);
 }
-.flying-id{
+
+.flying-id {
     color: #fff;
     background: linear-gradient(#8a1125 0%, #b6586d 30%);
 }
-.subtitle-info-secundary{
+
+.subtitle-info-secundary {
     margin: 0;
     font-weight: 550;
     color: #272626;
 }
-.subtitle-stat{
+
+.subtitle-stat {
     font-size: 35px;
     margin-left: 30px;
     color: #272626;
 }
-.info-stat{
+
+.info-stat {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
-.stat-description{
+
+.stat-description {
     font-size: 23px;
     justify-content: center;
     align-items: center;
 }
-.number-stat{
+
+.number-stat {
     font-size: 20px;
     justify-content: center;
     align-items: center;
 }
-.stat-container{
+
+.stat-container {
     display: flex;
     flex-direction: column;
     width: 90%;
     padding: 60px;
     color: #272626;
 }
-.stat-info-container{
+
+.stat-info-container {
     padding: 0 30px;
 }
-.stat-info-percentage-container{
+
+.stat-info-percentage-container {
     width: 100%;
     height: 30px;
     background-color: #e9e9e9d5;
     border-radius: 5px;
 }
-.stat-info-percentage{
+
+.stat-info-percentage {
     width: 50%;
     height: 30px;
     background: linear-gradient(to right, #f7e43be0, rgb(211, 128, 61));
     border-radius: 5px;
 }
-.movements-containers{
+
+.movements-containers {
     width: 80%;
     background-color: #fff;
     padding: 10px;
@@ -512,7 +604,8 @@ body{
     border-radius: 10px;
     color: #272626;
 }
-.movement-info-container{
+
+.movement-info-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -520,7 +613,8 @@ body{
     padding: 0 30px 30px;
     box-sizing: border-box;
 }
-.movement{
+
+.movement {
     background-color: #d8d6d6;
     border-radius: 15px;
     padding: 10px 20px;
@@ -528,11 +622,13 @@ body{
     font-size: 20px;
     color: #272626;
 }
-.btn-poke-info{
+
+.btn-poke-info {
     position: relative;
     right: -30%;
 }
-.pagination-prev-next{
+
+.pagination-prev-next {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
@@ -541,16 +637,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e92a2a; 
+    background-color: #e92a2a;
     border-radius: 8px;
 }
-.pagination-number-container{
+
+.pagination-number-container {
     display: flex;
     gap: 20px;
     list-style: none;
     padding-left: 0;
 }
-.pagination-number{
+
+.pagination-number {
     font-size: 30px;
     cursor: pointer;
     width: 40px;
@@ -560,22 +658,87 @@ body{
     align-items: center;
     border-radius: 8px;
 }
-.page-active{
-    background-color: #e92a2a; 
+
+.page-active {
+    background-color: #e92a2a;
     color: #fff;
 }
-@media (max-width: 1000px){
-    .input{
+
+.pagination-container-1 {
+    background-color: #f0f0f0;
+    box-shadow: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    gap: 5px;
+}
+.img-header {
+    width: 431px;
+    height: 76px;
+    position: absolute;
+    background-image: url(./components/image12.png);
+    background-size: cover;
+    background-repeat: repeat;
+    border: none;
+    left: 133px;
+    top: 47px;
+}
+
+.pokeball {
+    background-image: url(./components/Ellipse\ 4.png);
+    box-sizing: border-box;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 1265px;
+    top: 105px;
+    background: #212121;
+    border: 12px solid #000000;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.pokeball-1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 117px;
+    height: 117px;
+    left: 1238px;
+    top: 78px;
+    background: #FFFFFF;
+    border: 12px solid #000000;
+    border-radius: 50%;
+}
+.loader{
+    background-image: url(https://cdn.dribbble.com/users/1081076/screenshots/2832850/pokemongo.gif);
+    width: 55vw;
+    height: 70vh;
+    border-radius: 50px;
+    position: relative;
+    left: 20%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+    .input {
         font-size: 13px;
     }
-    .btn{
+
+    .btn {
         font-size: 13px;
     }
-    .subtitle-container{
+
+    .subtitle-container {
         font-size: 15px;
         flex-direction: column;
     }
-    .search-container{
+
+    .search-container {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -583,48 +746,60 @@ body{
         align-items: center;
         text-align: center;
     }
-    .form-welcome{
+
+    .form-welcome {
         box-sizing: border-box;
     }
-    .pokedex-container{
+
+    .pokedex-container {
         padding: 15px;
         justify-content: center;
         align-items: center;
     }
-    .select-pagination{
+
+    .select-pagination {
         font-size: 13px;
         width: 50px;
     }
-    .label-pagination{
+
+    .label-pagination {
         font-size: 13px;
     }
-    .pagination-container{
+
+    .pagination-container {
         width: 320px;
     }
-    .pagination-prev-next{
+
+    .pagination-prev-next {
         font-size: 20px;
         width: 30px;
     }
-    .pagination-number-container{
+
+    .pagination-number-container {
         gap: 20px;
     }
-    .pagination-number{
+
+    .pagination-number {
         font-size: 20px;
         width: 30px;
     }
-    .container-info-secundary-principal{
+
+    .container-info-secundary-principal {
         flex-direction: column;
     }
-    .container-infomation-secundary{
+
+    .container-infomation-secundary {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .img-info{
+
+    .img-info {
         width: 200px;
         top: -20%;
     }
-    .subtitle-stat{
+
+    .subtitle-stat {
         font-size: 25px;
         text-align: center;
         margin: 0;
@@ -632,3 +807,5 @@ body{
         color: #3fe4bb;
     }
 }
+
+

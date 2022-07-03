@@ -23,7 +23,7 @@ const InputHome = () => {
     
   return (
     <form onSubmit={handleSubmit(submit)} className='form-welcome'>
-        <input type="text" placeholder='Ingresa tu nombre de entrenador' {...register('nameUser')} className='input'/>
+        <input type="text" placeholder='Enter your trainer name' {...register('nameUser')} className='input'/>
         <button className='btn'>Begin</button>
     </form>
   )

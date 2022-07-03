@@ -20,7 +20,7 @@ const Pagination = ({arrayPages, setCurrentPage, currentPage, quantityPages}) =>
 
     const changePageTo = n => setCurrentPage(n)
   return (
-    <div className='pagination-container'>
+    <div className='pagination-container-1'>
         <div className='pagination-prev-next' onClick={prevPage}>&#60;</div>
         <ul className='pagination-number-container'>{
             arrayPages?.map(num => (

@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const pokemonPerPageSlice = createSlice({
     name: 'pokemonPerPage',
-    initialState: '10',
+    initialState: '6',
     reducers: {
         setPokemonPerPage: (state,action) => action.payload
 

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import Loader from "../Loader";
 import NumberPagination from "../NumberPagination";
 import Pagination from "./Pagination";
 import PokeCard from "./PokeCard";
@@ -12,6 +13,8 @@ const PokedexScreen = () => {
 
   const pokemonPerPage = useSelector((state) => state.pokemonPerPage);
 
+  const [loading, setLoading] = useState(true)
+
   const [pokemons, setPokemons] = useState();
 
   useEffect(() => {
@@ -19,7 +22,10 @@ const PokedexScreen = () => {
       " https://pokeapi.co/api/v2/pokemon/?limit=1154&offset=0";
     axios
       .get(URL_POKEMON)
-      .then((res) => setPokemons(res.data.results))
+      .then((res) => {
+        setPokemons(res.data.results)
+        setLoading(false)
+      })
       .catch((err) => console.log(err));
   }, []);
 
@@ -62,31 +68,40 @@ const PokedexScreen = () => {
 
   return (
     <div className="pokedex-container">
-      <div>
-        <section className="subtitle-container">
-          <p className="subtitle">Hello {userName},</p>
-          <p className="subtitle-info">here you can find your favorite pokemon</p>
-        </section>
-        <section className="search-container">
-          <PokeName />
-          <NumberPagination />
-          <PokeType />
-        </section>
-      </div>
+      {
+        loading ?
+        <Loader/>
+        :
+        <>
+        <div>
+          <section className="subtitle-container">
+        
+            <p className="subtitle">Hello {userName},</p>
+            <p className="subtitle-info">here you can find your favorite pokemon</p>
+          </section>
+          <section className="search-container">
+            <PokeName />
+            <NumberPagination />
+            <PokeType />
+          </section>
+        </div>
 
       
 
-      <section className="pokemon-card-container">
+        <section className="pokemon-card-container">
         {arrayPokemons?.map((pokemon) => (
           <PokeCard key={pokemon.url} url={pokemon.url} />
         ))}
-      </section>
-      <Pagination
+        </section>
+        <Pagination
         arrayPages={arrayPages}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
         quantityPages={quantityPages}
       />
+      </>
+      }
+      
     </div>
   );
 };

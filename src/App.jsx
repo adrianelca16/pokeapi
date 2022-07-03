@@ -15,7 +15,9 @@ function App() {
   return (
     <div className="App">
       <header className='header'>
-        <h1 className='title'>Pokedex</h1>
+        <div className='img-header'></div>
+        <div className='pokeball'></div>
+        <div className='pokeball-1'></div>
       </header>
       <Routes>
         <Route path='/' element={<HomeScreen/>}/>
