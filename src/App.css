@@ -806,6 +806,23 @@ body {
         padding: 10px;
         color: #3fe4bb;
     }
+    .img-header {
+        width: 215px;
+        height: 38px;
+        position: absolute;
+        background-image: url(./components/image12.png);
+        background-size: cover;
+        background-repeat: repeat;
+        border: none;
+        right: 25px;
+    }
+    .pokeball {
+        display: none;
+    }
+    
+    .pokeball-1 {
+        display: none;
+    }
 }
 
 
