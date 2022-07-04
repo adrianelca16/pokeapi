@@ -21,8 +21,7 @@ const PokemonType = () => {
 
   useEffect(() => {
     const URL_TYPE = "https://pokeapi.co/api/v2/type/";
-    axios
-      .get(`${URL_TYPE}${type}/`)
+    axios.get(`${URL_TYPE}${type}/`)
       .then((res) => {
         setPokemonsType(res.data.pokemon)
         setLoading(false)
