@@ -18,7 +18,7 @@ const PokemonName = () => {
       .get(`${URL_POKEMON_NAME}${name}/`)
       .then((res) => setNamePokemon(res.data))
       .catch((err) => console.log(er));
-  }, []);
+  }, [name]);
 
     const submitPokemonId = () => {
     navigate(`/pokedex/${namePokemon?.id}`)
