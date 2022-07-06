@@ -23,7 +23,7 @@ const PokeName = () => {
   }
   return (
     <form onSubmit={handleSubmit(submit)} className='form-welcome'>
-        <input type="text" placeholder='Pokemon searh' {...register('namePokemon')} className='input'/>
+        <input type="text" placeholder='Search for your favorite pokemon' {...register('namePokemon')} className='input'/>
         <button className='btn'>Search</button>
     </form>
   )

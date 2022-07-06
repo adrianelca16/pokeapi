@@ -65,7 +65,7 @@ const PokemonType = () => {
         <div>
           <section className='subtitle-container'>
             <p className='subtitle'>Hola {userName},</p>
-            <p>aqui podras encontrar tu pokemon favorito</p>
+            <p>here you can find your favorite pokemon</p>
           </section>
           <section className='search-container'>
             <PokeName/>
