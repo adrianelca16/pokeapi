@@ -8,6 +8,7 @@ import PokemonName from './components/pokedex/PokemonName'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import PokemonType from './components/Type/PokemonType'
 import MinPokedex from './components/MinPokedex'
+import Err404 from './components/pokedex/Err404'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,7 @@ function App() {
           <Route path='/pokedex/name/'>
             <Route path=':name' element={<PokemonName/>}/>
           </Route>
+          <Route path='/pokedex/err404' element={<Err404/>}/>
         </Route>
         
       </Routes>

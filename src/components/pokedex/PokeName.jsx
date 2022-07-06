@@ -13,11 +13,12 @@ const PokeName = () => {
   const navigate = useNavigate()
 
   const submit = data => {
-    dispatch(setNamePokemonGlobal(data.namePokemon))
+    let search = data.namePokemon.toLowerCase()
+    dispatch(setNamePokemonGlobal(search))
     reset({
       namePokemon: ''
     })
-    navigate(`/pokedex/name/${data.namePokemon}`)
+    navigate(`/pokedex/name/${search}`)
 
 
   }

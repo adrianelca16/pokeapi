@@ -9,6 +9,8 @@ const PokemonName = () => {
   const { name } = useParams();
   const navigate = useNavigate()
 
+  const [error404, setError404] = useState()
+
   const [namePokemon, setNamePokemon] = useState();
   const userName = useSelector((state) => state.nameUser);
 
@@ -17,9 +19,14 @@ const PokemonName = () => {
     axios
       .get(`${URL_POKEMON_NAME}${name}/`)
       .then((res) => setNamePokemon(res.data))
-      .catch((err) => console.log(er));
+      .catch((err) => setError404(err));
   }, [name]);
 
+  if(error404){
+    navigate('/pokedex/err404')
+  }
+  
+  console.log('namePokemon ',namePokemon);
     const submitPokemonId = () => {
     navigate(`/pokedex/${namePokemon?.id}`)
     
